@@ -16,7 +16,7 @@ public class InsertionSort {
      */
     public static int[] gerarVetor(int tamanho){
         int[] vetor = new int[tamanho];
-        for(int i = 0; i < tamanho - 1; i++){
+        for(int i = 0; i < tamanho; i++){
             vetor[i] = aleatorio.nextInt()%100;
         }
         return vetor;
@@ -28,7 +28,7 @@ public class InsertionSort {
             boolean posicaoCerta = false;
             int temp = vetor[ref];
             for(int i = ref - 1; i >= 0 && !posicaoCerta; i--){
-                if(vetor[ref] < vetor[i]){
+                if(temp < vetor[i]){
                     vetor[i + 1] = vetor[i];
                 }
                 else{ 

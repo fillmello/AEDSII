@@ -28,6 +28,7 @@ public class SelectionSort {
         for(int ref = vetor.length - 1; ref > 0; ref--){
             int maiorValor = ref;
             for(int i = 0; i < ref; i++){
+                operacoes++;
                 if(vetor[i] > vetor[maiorValor]){
                     maiorValor = i;
                 }
@@ -46,5 +47,6 @@ public class SelectionSort {
         for (int i = 0; i < vetorTeste.length; i++){
             System.out.println(teste[i]);
         }
+        System.out.println(operacoes);
     } 
 }

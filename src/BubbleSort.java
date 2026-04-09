@@ -18,7 +18,7 @@ public class BubbleSort {
     public static int[] gerarVetor(int tamanho){
         int[] vetor = new int[tamanho];
         for(int i = 0; i < tamanho; i++){
-            vetor[i] = aleatorio.nextInt()%100;
+            vetor[i] = aleatorio.Œ()%100;
         }
         return vetor;
 

@@ -1,4 +1,4 @@
-package src;
+package src.recursiveExamples;
 
 public class IsPalindrome {
     public boolean isPalindrome(int x) {
